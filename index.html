@@ -20,16 +20,15 @@
 
 			<article id = "tab1">
 
-			<center><h1>Campaña Mailings Enero - Febrero - Marzo </h1>
+			<center><h1>Campaña Mailings Enero a Abril </h1>
 			<br>
 			<br>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            	<script type="text/javascript">
+              	google.charts.load('current', {'packages':['table']});
+              	google.charts.setOnLoadCallback(drawTable);
 
-			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-            <script type="text/javascript">
-              google.charts.load('current', {'packages':['table']});
-              google.charts.setOnLoadCallback(drawTable);
-
-              function drawTable() {
+              	function drawTable() {
                 var data = new google.visualization.DataTable();
                 data.addColumn('string', 'Campaña');
                 data.addColumn('number', 'Enviados');
@@ -49,13 +48,48 @@
                 var table = new google.visualization.Table(document.getElementById('table_div'));
 
                 table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
-              }
-            </script>
+              	}
+            	</script>
 
             <div id="table_div"></div>
+<br>
+<br>
+<br>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            	<script type="text/javascript">
+              	google.charts.load('current', {'packages':['table']});
+              	google.charts.setOnLoadCallback(drawTable);
 
+              	function drawTable() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Campaña');
+                data.addColumn('number', 'Enviados');
+                data.addColumn('number', 'Recibidos');
+                data.addColumn('number', 'Abiertos');
+                data.addColumn('number', 'Clics');
+                data.addRows([
+                  ['Club tvgo',  {v: 3301311,  f: '3,301,311'},{v: 3279290,  f: '3,279,290 (99.32%)'},{v: 75736,  f: '75,736'},{v: 3122,  f: '3,122'}],
+                  ['Series',     {v: 544086,   f: '544,086'},{v: 540722,  f: '540,722 (99.38%)'},{v: 19497,  f: '19,497'},{v: 766,  f: '766'}],
+                  ['Películas',  {v: 178245,   f: '178,245'},{v: 176846,  f: '176,846 (99.22%)'},{v: 4329,  f: '4,329'},{v: 196,  f: '196'}],
+                  ['Champions',  {v: 187036,   f: '187,036'},{v: 186810,  f: '186,810 (99.88%)'},{v: 6740,  f: '6,740'},{v: 356,  f: '356'}],
+                  ['Comercial',  {v: 70631,    f: '70,631'},{v: 69915,  f: '69,915 (98.99%)'},{v: 3192,  f: '3,192'},{v: 120,  f: '120'}],
+                  ['Sorteos',    {v: 18017,    f: '18,017'},{v: 18007,  f: '18,007 (99.95%)'},{v: 1198,  f: '1,198'},{v: 52,  f: '52'}],
+                  ['Vencimiento',{v: 813,       f: '813'},{v: 810,  f: '810 (99.63%)'},{v: 167,  f: '167'},{v: 44,  f: '44'}]
+                ]);
+
+                var table = new google.visualization.Table(document.getElementById('table_div1'));
+
+                table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+              	}
+            	</script>
+
+            <div id="table_div1"></div>
+<br>
+<br>
+<br>	
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">
+
             google.charts.load('current', {'packages':['corechart']});
             google.charts.setOnLoadCallback(drawChart);
 
@@ -142,33 +176,33 @@
 <br>
 <br>
 <b>Enero:</b>
-		    <br>
-Suscriptores: Promedio: 12.87% , Mejor Campaña: 14.89%
 <br>
-No Suscriptores:  Promedio: 1.37% , Mejor Campaña: 2.33%
+Suscriptores: Promedio: 12.86% , Mejor Campaña: 14.89%
+<br>
+No Suscriptores:  Promedio: 1.40% , Mejor Campaña: 2.33%
 <br>
 <br>
 <b>Febrero:</b>
-		    <br>
+<br>
 Suscriptores:  Promedio: 11.33% , Mejor Campaña: 12.15%
 <br>
-No Suscriptores:   Promedio: 2.15% , Mejor Campaña: 5.88%
+No Suscriptores:   Promedio: 2.49% , Mejor Campaña: 5.88%
 <br>
 <br>		    
 <b>Marzo:</b>
-		    <br>
+<br>
 Suscriptores:  Promedio: 13.01% , Mejor Campaña: 23.15%
 <br>
 No Suscriptores:  Promedio: 3.45% , Mejor Campaña: 8.12%
 <br>
 <br>
 <b>Abril:</b>
-		    <br>
+<br>
 Suscriptores:  Promedio: 12.87% , Mejor Campaña: 15.15%
 <br>
 No Suscriptores:  Promedio: 3.89% , Mejor Campaña: 8.26%		    
 <br>
-		    <br>
+<br>
 </tr>
 </td>
 </table>
