@@ -41,13 +41,13 @@
                   ['Vencimiento',{v: 343,       f: '343'},{v: 342,  f: '342 (99.71%)'},{v: 73,  f: '73'},{v: 16,  f: '16'}]
                 ]);
 
-                var table = new google.visualization.Table(document.getElementById('table_div'));
+                var table = new google.visualization.Table(document.getElementById('table_div1'));
 
                 table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
               	}
             	</script>
 
-            <div id="table_div"></div>
+            <div id="table_div1"></div>
 <br>
 <br>
 <br>
@@ -72,13 +72,13 @@
                   ['Vencimiento',{v: 262,       f: '262'},{v: 260,  f: '260 (99.24%)'},{v: 41,  f: '41'},{v: 10,  f: '10'}]
                 ]);
 
-                var table = new google.visualization.Table(document.getElementById('table_div1'));
+                var table = new google.visualization.Table(document.getElementById('table_div2'));
 
                 table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
               	}
             	</script>
 
-            <div id="table_div1"></div>
+            <div id="table_div2"></div>
 <br>
 <br>
 <br>			
@@ -103,13 +103,13 @@
                   ['Vencimiento',{v: 208,       f: '208'},{v: 208,  f: '208 (100.00%)'},{v: 53,  f: '53'},{v: 18,  f: '18'}]
                 ]);
 
-                var table = new google.visualization.Table(document.getElementById('table_div2'));
+                var table = new google.visualization.Table(document.getElementById('table_div3'));
 
                 table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
               	}
             	</script>
 
-            <div id="table_div2"></div>
+            <div id="table_div3"></div>
 <br>
 <br>
 <br>	
@@ -134,20 +134,46 @@
                   ['Vencimiento',{v: 332,     f: '332'}    ,{v: 332,  f: '332 (100.00%)'},{v: 60,  f: '60'},{v: 23,  f: '23'}]
                 ]);
 
-                var table = new google.visualization.Table(document.getElementById('table_div3'));
+                var table = new google.visualization.Table(document.getElementById('table_div4'));
 
                 table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
               	}
             	</script>
 
-            <div id="table_div3"></div>
+            <div id="table_div4"></div>
 <br>
 <br>
-<br>				
-				
-				
-				
-				
+<br>								
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+              var data = google.visualization.arrayToDataTable([
+                ['Campaña', 'Enviados'],
+                ['Club tvgo',         1342151],
+                ['Series',              26866],
+                ['Vencimiento',           343]
+              ]);
+
+              var options = {
+                title: 'MAILINGS ENVIADOS POR TIPO CAMPAÑA '
+              };
+
+              var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+              chart.draw(data, options);
+            }
+          </script>
+
+          <div id="piechart1" style="width: 800px; height: 600px;"></div>
+
+<br>
+<br>
+<br>								
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">
 
@@ -171,13 +197,80 @@
                 title: 'MAILINGS TOTAL ENVIADOS POR TIPO CAMPAÑA '
               };
 
-              var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+              var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
 
               chart.draw(data, options);
             }
           </script>
 
-          <div id="piechart1" style="width: 800px; height: 600px;"></div>
+          <div id="piechart2" style="width: 800px; height: 600px;"></div>
+<br>
+<br>
+<br>								
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+              var data = google.visualization.arrayToDataTable([
+                ['Campaña', 'Enviados'],
+                ['Club tvgo',         3301311],
+                ['Series',             544086],
+                ['Peliculas',          178245],
+                ['Champions',          187036],
+                ['Comercial',           70631],
+                ['Sorteos',             18017],
+                ['Vencimiento',           813]
+              ]);
+
+              var options = {
+                title: 'MAILINGS TOTAL ENVIADOS POR TIPO CAMPAÑA '
+              };
+
+              var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+
+              chart.draw(data, options);
+            }
+          </script>
+
+          <div id="piechart3" style="width: 800px; height: 600px;"></div>
+				
+<br>
+<br>
+<br>								
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+              var data = google.visualization.arrayToDataTable([
+                ['Campaña', 'Enviados'],
+                ['Club tvgo',         3301311],
+                ['Series',             544086],
+                ['Peliculas',          178245],
+                ['Champions',          187036],
+                ['Comercial',           70631],
+                ['Sorteos',             18017],
+                ['Vencimiento',           813]
+              ]);
+
+              var options = {
+                title: 'MAILINGS TOTAL ENVIADOS POR TIPO CAMPAÑA '
+              };
+
+              var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+
+              chart.draw(data, options);
+            }
+          </script>
+
+          <div id="piechart4" style="width: 800px; height: 600px;"></div>
 
 			      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
