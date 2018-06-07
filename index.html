@@ -113,7 +113,37 @@
 <br>
 <br>
 <br>	
-				
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            	<script type="text/javascript">
+              	google.charts.load('current', {'packages':['table']});
+              	google.charts.setOnLoadCallback(drawTable);
+
+              	function drawTable() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Campaña');
+                data.addColumn('number', 'Enviados');
+                data.addColumn('number', 'Recibidos');
+                data.addColumn('number', 'Abiertos');
+                data.addColumn('number', 'Clics');
+                data.addRows([
+                  ['Club tvgo',  {v: 783879,  f: '783,879'},{v: 763260,  f: '763,260 (97.37%)'},{v: 14295,  f: '14,295'},{v: 724,  f: '724'}],
+                  ['Cyber tvgo', {v: 451030,  f: '451,030'},{v: 448856,  f: '448,856 (99.52%)'},{v: 13568,  f: '13,568'},{v: 751,  f: '751'}],
+		  ['Champions',  {v: 41344,   f: '41,344'} ,{v: 41283,  f: '41,283 (99.85%)'},{v: 2733,  f: '2,733'},{v: 129,  f: '129'}],
+                  ['Sorteo',     {v: 29529,   f: '29,529'} ,{v: 29481,  f: '29,481 (99.84%)'},{v: 1051,  f: '1,051'},{v: 58,  f: '58'}],
+                  ['Series',     {v: 18496,   f: '18,496'} ,{v: 67030,  f: '67,030 (98.69%)'},{v: 1672,  f: '1,672'},{v: 31,  f: '31'}],
+                  ['Vencimiento',{v: 332,     f: '332'}    ,{v: 332,  f: '332 (100.00%)'},{v: 60,  f: '60'},{v: 23,  f: '23'}]
+                ]);
+
+                var table = new google.visualization.Table(document.getElementById('table_div3'));
+
+                table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+              	}
+            	</script>
+
+            <div id="table_div3"></div>
+<br>
+<br>
+<br>				
 				
 				
 				
