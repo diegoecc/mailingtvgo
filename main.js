@@ -32,57 +32,73 @@ $(document).ready(function(){
 	});
 
 	/*Primer Tab*/ 
-<table>
-        <td>
-          <tr>
-            <h3>Segmentaciones utilizadas para las campañas de Mailing </h3>
-            <br>
-            <br>
-            <b>Club tvgo:</b> Suscriptores, No Suscriptores (algunas vez usaron el servicio pero actualmente no estan suscritos),
-            No Suscriptores (nunca contrataron un plan).
-            <br>
-            <b>Series:</b> Suscriptores (Series vistas tracking), No Suscriptores (Series segun rango de edad).
-            <br>
-            <b>Películas:</b> Suscriptores (Películas relacionadas a la categoría ya vista), No Suscriptores (Categoría de películas
-            relacionadas según rango de edad).
-            <br>
-            <b>Champions:</b> Suscriptores (Hombres y N/A), No Suscriptores (Universitarios hombres y N/A).
-            <br>
-            <b>Comercial:</b> Segmentación segun requerimiento del cliente.
-            <br>
-            <b>Sorteos: </b>Suscriptores (todos), No Suscriptores (los que alguna vez estuvieron suscritos y nuevos activos
-            recientes).
-            <br>
-            <b>Vencimiento:</b> BBDD de pagoefectivo
-            <br>
-            <br>
-            <br>
-            <b>Ratio de Apertura</b>
-            <br>
-            <br>
-            <b>Enero:</b>
-            <br> Suscriptores: Promedio: 12.86% , Mejor Campaña: 14.89%
-            <br> No Suscriptores: Promedio: 1.40% , Mejor Campaña: 2.33%
-            <br>
-            <br>
-            <b>Febrero:</b>
-            <br> Suscriptores: Promedio: 11.33% , Mejor Campaña: 12.15%
-            <br> No Suscriptores: Promedio: 2.49% , Mejor Campaña: 5.88%
-            <br>
-            <br>
-            <b>Marzo:</b>
-            <br> Suscriptores: Promedio: 13.01% , Mejor Campaña: 23.15%
-            <br> No Suscriptores: Promedio: 3.45% , Mejor Campaña: 8.12%
-            <br>
-            <br>
-            <b>Abril:</b>
-            <br> Suscriptores: Promedio: 12.87% , Mejor Campaña: 15.15%
-            <br> No Suscriptores: Promedio: 3.89% , Mejor Campaña: 8.26%
-            <br>
-            <br>
-          </tr>
-        </td>
-      </table>
+function tabOne(){
+		google.charts.load('current', { 'packages': ['table'] });
+		google.charts.setOnLoadCallback(drawTable);
+		function drawTable() {
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Campaña');
+			data.addColumn('number', 'Enviados');
+			data.addColumn('number', 'Recibidos');
+			data.addColumn('number', 'Abiertos');
+			data.addColumn('number', 'Clics');
+			data.addRows([
+			['Club tvgo', { v: 1342151, f: '1,342,151' }, { v: 1328721, f: '1,328,721 (98.99%)' }, { v: 21786, f: '21,786' }, { v: 974, f: '974' }],
+			['Series', { v: 26866, f: '26,866' }, { v: 26837, f: '26,837 (99.89%)' }, { v: 709, f: '709' }, { v: 14, f: '14' }],
+			['Vencimiento', { v: 343, f: '343' }, { v: 342, f: '342 (99.71%)' }, { v: 73, f: '73' }, { v: 16, f: '16' }]
+			]);
+			var table = new google.visualization.Table(document.getElementById('table_div10'));
+			table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
+		}
+
+		google.charts.load('current', { 'packages': ['corechart'] });
+		google.charts.setOnLoadCallback(drawChart1);
+		function drawChart1() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Enviados'],
+			['Club tvgo', 1342151],
+			['Series', 26866],
+			['Vencimiento', 343]
+			]);
+			var options = {
+			title: 'MAILINGS ENVIADOS POR TIPO CAMPAÑA '
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart10'));
+			chart.draw(data, options);
+		}
+
+		google.charts.load('current', { 'packages': ['bar'] });
+		google.charts.setOnLoadCallback(drawChart2);
+		function drawChart2() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Suscriptores', 'No Suscriptores'],
+			['Club tvgo', 12.88, 1.41],
+			['Series', 0, 2.64],
+			['Vencimiento', 0, 21.35]
+			]);
+			var options = {
+			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			};
+			var chart = new google.charts.Bar(document.getElementById('columnchart_material10'));
+			chart.draw(data, google.charts.Bar.convertOptions(options));
+		}
+
+		google.charts.load('current', { 'packages': ['bar'] });
+		google.charts.setOnLoadCallback(drawChart3);
+		function drawChart3() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Suscriptores', 'No Suscriptores'],
+			['Club tvgo', 9.99, 3.46],
+			['Series', 0, 1.97],
+			['Vencimiento', 0, 21.92]
+			]);
+			var options = {
+			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			};
+			var chart = new google.charts.Bar(document.getElementById('columnchart_material10'));
+			chart.draw(data, google.charts.Bar.convertOptions(options));
+		}
+	}
 	/*End primer tab*/ 
 
 	/*Segundo tab*/
