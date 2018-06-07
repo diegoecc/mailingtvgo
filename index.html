@@ -299,7 +299,34 @@
 
           </script>
           <div id="columnchart_material1" style="width: 900px; height: 400px;"></div>
+<br>
+<br>
+<br>
+	   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+           <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
 
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Campaña', 'Suscriptores', 'No Suscriptores'],
+                  ['Club tvgo',   9.99, 3.46],
+                  ['Series',      0, 1.97],
+                  ['Vencimiento',  0, 21.92]
+
+                ]); 
+
+              var options = {
+                  title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+              };
+
+              var chart = new google.charts.Bar(document.getElementById('columnchart_material5'));
+
+              chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+
+          </script>
+          <div id="columnchart_material1" style="width: 900px; height: 400px;"></div>
 <br>
 <br>
 <br>
@@ -342,6 +369,37 @@
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                   ['Campaña', 'Suscriptores', 'No Suscriptores'],
+                  ['Club tvgo',   6.64, 3.40],
+                  ['Series',       3.57, 3.79],
+                  ['Champions',    3.59, 4.87],
+                  ['Comercial',       0, 3.94],
+                  ['Sorteos',      6.32, 2.73],
+                  ['Vencimiento',     0,24.39]
+
+                ]); 
+
+              var options = {
+                  title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+              };
+
+              var chart = new google.charts.Bar(document.getElementById('columnchart_material6'));
+
+              chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+
+          </script>
+          <div id="columnchart_material6" style="width: 900px; height: 400px;"></div>
+<br>
+<br>
+<br>
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Campaña', 'Suscriptores', 'No Suscriptores'],
                   ['Club tvgo',   13.01, 3.45],
                   ['Películas',   10.10, 2.02],
                   ['Champions',   11.89, 3.43],
@@ -362,6 +420,38 @@
 
           </script>
           <div id="columnchart_material3" style="width: 900px; height: 400px;"></div>
+				
+<br>
+<br>
+<br>
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Campaña', 'Suscriptores', 'No Suscriptores'],
+                  ['Club tvgo',   8.66, 3.83],
+                  ['Películas',   3.75, 4.75],
+                  ['Champions',   0.58, 11.30],
+		  ['Series',      3.27, 5.94],
+                  ['Comercial',       0, 3.27],
+                  ['Vencimiento',    0, 33.96]
+
+                ]); 
+
+              var options = {
+                  title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+              };
+
+              var chart = new google.charts.Bar(document.getElementById('columnchart_material7'));
+
+              chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+
+          </script>
+          <div id="columnchart_material7" style="width: 900px; height: 400px;"></div>
 <br>
 <br>
 <br>
@@ -393,7 +483,38 @@
 
           </script>
           <div id="columnchart_material4" style="width: 900px; height: 400px;"></div>
-				
+
+<br>
+<br>
+<br>
+	    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['bar']});
+              google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Campaña', 'Suscriptores', 'No Suscriptores'],
+                  ['Club tvgo',    9.14, 4.56],
+                  ['Cyber tvgo',      0, 5.54],
+                  ['Champions',    4.70, 4.73],
+                  ['Sorteos',       8.7, 3.45],
+                  ['Series',       2.26, 1.59],
+                  ['Vencimiento',    0, 38.33]
+
+                ]); 
+
+              var options = {
+                  title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+              };
+
+              var chart = new google.charts.Bar(document.getElementById('columnchart_material8'));
+
+              chart.draw(data, google.charts.Bar.convertOptions(options));
+              }
+
+          </script>
+          <div id="columnchart_material8" style="width: 900px; height: 400px;"></div>
 
 
 	</article>
