@@ -83,8 +83,7 @@ $(document).ready(function(){
           </tr>
         </td>
       </table>
-	/*End primer tab*/
-	/*Primer Tab*/ 
+	/*End primer tab*/ 
 
 	/*Segundo tab*/
 	function tabTwo(){
@@ -238,7 +237,7 @@ $(document).ready(function(){
 	}
 	/*End tercer tab*/
 
-/*Cuarto tab*/
+	/*Cuarto tab*/
 	function tabFour(){
 		google.charts.load('current', { 'packages': ['table'] });
 		google.charts.setOnLoadCallback(drawTable);
@@ -320,7 +319,7 @@ $(document).ready(function(){
 	}
 	/*End Cuarto tab*/
 
-/*Quinto tab*/
+	/*Quinto tab*/
 	function tabFive(){
 		google.charts.load('current', { 'packages': ['table'] });
 		google.charts.setOnLoadCallback(drawTable);
