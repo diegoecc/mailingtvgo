@@ -95,7 +95,7 @@ function tabOne(){
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
 			};
-			var chart = new google.charts.Bar(document.getElementById('columnchart_material10'));
+			var chart = new google.charts.Bar(document.getElementById('columnchart_material11'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
 		}
 	}
