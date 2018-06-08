@@ -61,9 +61,14 @@ function tabOne(){
 		function drawChart1() {
 			var data = google.visualization.arrayToDataTable([
 			['Campaña', 'Enviados'],
-			['Club tvgo', 1342151],
-			['Series', 26866],
-			['Vencimiento', 343]
+			['Club tvgo', 4085190],
+			['Series',     562582],
+			['Cyber tvgo', 451030],
+			['Champions',  228380],
+			['Peliculas',  178245],
+			['Comercial',   70631],
+			['Sorteos',     47546],
+			['Vencimiento',  1145]
 			]);
 			var options = {
 			title: 'MAILINGS ENVIADOS POR TIPO CAMPAÑA '
