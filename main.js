@@ -87,7 +87,7 @@ function tabOne(){
 			['Cyber tvgo', 0, 3.02, 0],
 			['Champions', 9.81, 3.61, 0],
 			['Peliculas', 10.10, 2.02, 0],
-			['Comercial', 0, 4.57],
+			['Comercial', 0, 4.57, 0],
 			['Sorteos', 9.79, 3.43, 0],
 			['Vencimiento', 0, 19.88, 0]
 			]);
