@@ -120,6 +120,42 @@ function tabOne(){
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material11'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
 		}
+	
+		google.charts.load('current', {'packages':['corechart']});
+      		google.charts.setOnLoadCallback(drawChart4);
+      		function drawChart4() {
+        		var data = google.visualization.arrayToDataTable([
+			['Mes','Suscriptores','No Suscriptores'],
+			['Enero', 12.86, 1.40],
+			['Febrero', 11.33, 2.49],
+			['Marzo', 13.01, 3.45],
+			['Abril', 12.87, 3.89]
+	        	]);
+	        	var options = {
+	          	title: 'PROMEDIO RATIO DE APERTURAS - MES',
+	          	legend: { position: 'bottom left' }
+	        	};
+		    	var chart = new google.visualization.LineChart(document.getElementById('linechart_material1'));
+		    	chart.draw(data, options);
+		}
+	
+		google.charts.load('current', {'packages':['corechart']});
+      		google.charts.setOnLoadCallback(drawChart5);
+      		function drawChart5() {
+        	var data = google.visualization.arrayToDataTable([
+			['Mes','Suscriptores','No Suscriptores'],
+			['Enero', 14.89, 2.33],
+			['Febrero', 12.15, 5.88],
+			['Marzo', 23.15, 8.12],
+			['Abril', 15.15, 8.26]
+	       		]);
+		        var options = {
+	         	title: 'MEJOR CAMPAÑA RATIO DE APERTURAS - MES',
+	          	legend: { position: 'bottom left' }
+	        	};
+		    	var chart = new google.visualization.LineChart(document.getElementById('linechart_material2'));
+			chart.draw(data, options);
+		}
 	}
 	/*End primer tab*/ 
 
