@@ -151,10 +151,10 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart2);
 		function drawChart2() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 12.88, 1.41],
-			['Series', 0, 2.64],
-			['Vencimiento', 0, 21.35]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 12.88, 1.47, 5.34],
+			['Series', 0, 2.64, 0],
+			['Vencimiento', 0, 21.35, 0]
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
@@ -167,10 +167,10 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart3);
 		function drawChart3() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 9.99, 3.46],
-			['Series', 0, 1.97],
-			['Vencimiento', 0, 21.92]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 9.99, 3.46, 2.96],
+			['Series', 0, 1.97, 0],
+			['Vencimiento', 0, 21.92, 0]
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
@@ -227,13 +227,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart2);
 		function drawChart2() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 11.33, 2.51],
-			['Series', 9.52, 2.37],
-			['Champions', 8.44, 3.17],
-			['Comercial', 0, 3.96],
-			['Sorteos', 10.31, 5.16],
-			['Vencimiento', 0, 15.77]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 11.33, 2.31, 5.25],
+			['Series', 9.52, 2.37, 0],
+			['Champions', 8.44, 3.17, 0],
+			['Comercial', 0, 3.96, 0],
+			['Sorteos', 10.31, 5.16, 0],
+			['Vencimiento', 0, 15.77, 0]
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
@@ -246,13 +246,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart3);
 		function drawChart3() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 6.64, 3.40],
-			['Series', 3.57, 3.79],
-			['Champions', 3.59, 4.87],
-			['Comercial', 0, 3.94],
-			['Sorteos', 6.32, 2.73],
-			['Vencimiento', 0, 24.39]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 6.64, 3.71, 1.54],
+			['Series', 3.57, 3.79, 0],
+			['Champions', 3.59, 4.87, 0],
+			['Comercial', 0, 3.94, 0],
+			['Sorteos', 6.32, 2.73, 0],
+			['Vencimiento', 0, 24.39, 0]
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
@@ -309,13 +309,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart2);
 		function drawChart2() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 13.01, 3.45],
-			['Películas', 10.10, 2.02],
-			['Champions', 11.89, 3.43],
-			['Series', 15.67, 4.42],
-			['Comercial', 0, 7.78],
-			['Vencimiento', 0, 25.48]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 13.01, 2.54, 7.25],
+			['Películas', 10.10, 2.02, 0],
+			['Champions', 11.89, 3.43, 0],
+			['Series', 15.67, 4.42, 0],
+			['Comercial', 0, 7.78, 0],
+			['Vencimiento', 0, 25.48, 0]
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
@@ -328,13 +328,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart3);
 		function drawChart3() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 8.66, 3.83],
-			['Películas', 3.75, 4.75],
-			['Champions', 0.58, 11.30],
-			['Series', 3.27, 5.94],
-			['Comercial', 0, 3.27],
-			['Vencimiento', 0, 33.96]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 8.66, 3.94, 2.70],
+			['Películas', 3.75, 4.75, 0],
+			['Champions', 0.58, 11.30, 0],
+			['Series', 3.27, 5.94, 0],
+			['Comercial', 0, 3.27, 0],
+			['Vencimiento', 0, 33.96, 0]
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
@@ -391,13 +391,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart2);
 		function drawChart2() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 12.87, 3.89],
-			['Cyber tvgo', 0, 3.02],
-			['Champions', 11.96, 5.64],
-			['Sorteos', 9.19, 2.55],
-			['Series', 13.06, 7.52],
-			['Vencimiento', 0, 18.07]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 12.87, 2.68, 6.77],
+			['Cyber tvgo', 0, 3.02, 0],
+			['Champions', 11.96, 5.64, 0],
+			['Sorteos', 9.19, 2.55, 0],
+			['Series', 13.06, 7.52, 0],
+			['Vencimiento', 0, 18.07, 0]
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
@@ -410,13 +410,13 @@ function tabOne(){
 		google.charts.setOnLoadCallback(drawChart3);
 		function drawChart3() {
 			var data = google.visualization.arrayToDataTable([
-			['Campaña', 'Suscriptores', 'No Suscriptores'],
-			['Club tvgo', 9.14, 4.56],
-			['Cyber tvgo', 0, 5.54],
-			['Champions', 4.70, 4.73],
-			['Sorteos', 8.7, 3.45],
-			['Series', 2.26, 1.59],
-			['Vencimiento', 0, 38.33]
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 9.14, 4.78, 2.86 ],
+			['Cyber tvgo', 0, 5.54, 0],
+			['Champions', 4.70, 4.73, 0],
+			['Sorteos', 8.7, 3.45, 0],
+			['Series', 2.26, 1.59, 0],
+			['Vencimiento', 0, 38.33, 0]
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
