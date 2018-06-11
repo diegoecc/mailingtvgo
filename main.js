@@ -88,6 +88,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material10'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -104,6 +105,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material11'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -239,6 +241,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material2'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -258,6 +261,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material6'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -321,6 +325,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material3'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -340,6 +345,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material7'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -403,6 +409,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material4'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -422,6 +429,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material8'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
