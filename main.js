@@ -158,8 +158,7 @@ function tabOne(){
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
-			subtitle: 'No Suscriptores 0: Nunca estuvieron suscritos.',
-			subtitle: 'No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
+			subtitle: 'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
 			};
 			var chart = new google.charts.Bar(document.getElementById('columnchart_material1'));
 			chart.draw(data, google.charts.Bar.convertOptions(options));
