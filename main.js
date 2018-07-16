@@ -24,6 +24,8 @@ $(document).ready(function(){
 			tabFour();//Cuarto tab
 		} else if(dataTab === "fiveTab"){
 			tabFive();//Quinto tab
+		} else if(dataTab === "sixTab"){
+			tabSix();//Sexto tab
 		} else{
 			console.log("No hay mas tab");
 		}
@@ -43,14 +45,15 @@ function tabOne(){
 			data.addColumn('number', 'Abiertos');
 			data.addColumn('number', 'Clics');
 			data.addRows([
-			['Club tvgo',   { v: 4085190, f: '4,085,190' }, { v: 4042550, f: '4,042,550 (98.96%)' }, { v: 90524, f: '90,524' }, { v: 3871,  f: '3871' }],
-			['Series',      { v: 562582,  f: '562,582' },   { v: 559202,  f: '559,202 (99.40%)' },   { v: 21258, f: '21,258' }, { v: 797,   f: '797' }],
-			['Cyber tvgo',  { v: 451030,  f: '451,030' },   { v: 448856,  f: '448,856 (99.52%)' },   { v: 13568, f: '13,568' }, { v: 751,   f: '751' }],
-			['Champions',   { v: 228380,  f: '228,380' },   { v: 228093,  f: '228,096 (99.88%)' },   { v: 9487,  f: '9,487' },  { v: 494,   f: '494' }],
-			['Peliculas',   { v: 178245,  f: '178,245' },   { v: 176846,  f: '176,846 (99.22%)' },   { v: 4385,  f: '4,385' },  { v: 198,   f: '198' }],
-			['Comercial',   { v: 70631,   f: '70,631' },    { v: 69915,   f: '69,915 (98.99%)' },    { v: 3192,  f: '3,192' },  { v: 120,   f: '120' }],
-			['Sorteos',     { v: 47546,   f: '47,546' },    { v: 47488,   f: '47,488 (99.88%)' },    { v: 2249,  f: '2,249' },  { v: 110,   f: '110' }],
-			['Vencimiento', { v: 1145,    f: '1,145' },     { v: 1142,    f: '1,142 (99.74%)' },     { v: 227, f: '227' },      { v: 67,   f: '67' }]
+			['Club tvgo',   { v: 5481798, f: '5,481,798' }, { v: 5437060, f: '5,437,060 (98.96%)' }, { v: 117222, f: '117,222' },   { v: 4639,  f: '4,639' }],
+			['Series',      { v: 562582,  f: '562,582' },   { v: 559202,  f: '559,202 (99.40%)' },   { v: 21258, f: '21,258' }, 	{ v: 797,   f: '797' }],
+			['Cyber tvgo',  { v: 451030,  f: '451,030' },   { v: 448856,  f: '448,856 (99.52%)' },   { v: 13568, f: '13,568' }, 	{ v: 751,   f: '751' }],
+			['Champions',   { v: 247890,  f: '247,890' },   { v: 247597,  f: '247,597 (99.88%)' },   { v: 10482,  f: '10,482' },	{ v: 520,   f: '520' }],
+			['Peliculas',   { v: 178245,  f: '178,245' },   { v: 176846,  f: '176,846 (99.22%)' },   { v: 4385,  f: '4,385' },  	{ v: 198,   f: '198' }],
+			['Comercial',   { v: 70631,   f: '70,631' },    { v: 69915,   f: '69,915 (98.99%)' },    { v: 3192,  f: '3,192' },  	{ v: 120,   f: '120' }],
+			['Sorteos',     { v: 85325,   f: '85,325' },    { v: 85238,   f: '85,238 (99.88%)' },    { v: 4358,  f: '4,358' }, 	 	{ v: 144,   f: '144' }],
+			['Vencimiento', { v: 1431,    f: '1,431' },     { v: 1427,    f: '1,427 (99.74%)' },     { v: 276, f: '227' },      	{ v: 72,   f: '67' }],
+			['Newsletter',  { v: 96,    f: '96' },       	{ v: 91,    f: '91 (99.74%)' },     	 { v: 29, f: '29' },        	{ v: 2,   f: '2' }]
 			]);
 			var table = new google.visualization.Table(document.getElementById('table_div10'));
 			table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
@@ -61,14 +64,15 @@ function tabOne(){
 		function drawChart1() {
 			var data = google.visualization.arrayToDataTable([
 			['Campaña', 'Enviados'],
-			['Club tvgo', 4085190],
+			['Club tvgo', 5481798],
 			['Series',     562582],
 			['Cyber tvgo', 451030],
-			['Champions',  228380],
+			['Champions',  247890],
 			['Peliculas',  178245],
 			['Comercial',   70631],
-			['Sorteos',     47546],
-			['Vencimiento',  1145]
+			['Sorteos',     85325],
+			['Vencimiento',  1431],
+			['Newsletter',     96]
 			]);
 			var options = {
 			title: 'MAILINGS ENVIADOS POR TIPO CAMPAÑA '
@@ -82,14 +86,14 @@ function tabOne(){
 		function drawChart2() {
 			var data = google.visualization.arrayToDataTable([
 			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
-			['Club tvgo', 11.95, 2.17, 5.99],
+			['Club tvgo', 12.08, 2.04, 6.02],
 			['Series', 8.98, 2.81, 0],
 			['Cyber tvgo', 0, 3.02, 0],
-			['Champions', 9.81, 3.61, 0],
+			['Champions', 9.87, 3.66, 0],
 			['Peliculas', 10.10, 2.02, 0],
 			['Comercial', 0, 4.57, 0],
-			['Sorteos', 9.79, 3.43, 0],
-			['Vencimiento', 0, 19.88, 0]
+			['Sorteos', 9.53, 3.83, 0],
+			['Vencimiento', 19.34, 0, 0]
 			]);
 			var options = {
 			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
@@ -104,14 +108,14 @@ function tabOne(){
 		function drawChart3() {
 			var data = google.visualization.arrayToDataTable([
 			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
-			['Club tvgo', 8.74, 3.98, 2.51],
+			['Club tvgo', 8.76, 3.65, 2.54],
 			['Series', 3.39, 3.97, 0],
 			['Cyber tvgo', 0, 5.54, 0],
-			['Champions', 3.75, 5.59, 0],
+			['Champions', 3.36, 5.40, 0],
 			['Peliculas', 3.75, 4.75, 0],
 			['Comercial', 0, 3.76, 0],
-			['Sorteos', 7.35, 3.08, 0],
-			['Vencimiento', 0, 29.52, 0]
+			['Sorteos', 4.50, 2.45, 0],
+			['Vencimiento', 26.09, 0, 0]
 			]);
 			var options = {
 			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
@@ -129,7 +133,8 @@ function tabOne(){
 			['Enero', 12.86, 1.40],
 			['Febrero', 11.33, 2.49],
 			['Marzo', 13.01, 3.45],
-			['Abril', 12.87, 3.89]
+			['Abril', 12.87, 3.89],
+			['Mayo', 13.94, 4.5]
 	        	]);
 	        	var options = {
 	          	title: 'PROMEDIO RATIO DE APERTURAS - MES',
@@ -147,7 +152,8 @@ function tabOne(){
 			['Enero', 14.89, 2.33],
 			['Febrero', 12.15, 5.88],
 			['Marzo', 23.15, 8.12],
-			['Abril', 15.15, 8.26]
+			['Abril', 15.15, 8.26],
+			['Mayo', 21.97, 8.89]
 	       		]);
 		        var options = {
 	         	title: 'MEJOR CAMPAÑA RATIO DE APERTURAS - MES',
@@ -483,5 +489,84 @@ function tabOne(){
 	}
 	/*End Quinto tab*/
 
+/*Sexto tab*/
+	function tabSix(){
+		google.charts.load('current', { 'packages': ['table'] });
+		google.charts.setOnLoadCallback(drawTable);
+		function drawTable() {
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Campaña');
+			data.addColumn('number', 'Enviados');
+			data.addColumn('number', 'Recibidos');
+			data.addColumn('number', 'Abiertos');
+			data.addColumn('number', 'Clics');
+			data.addRows([
+			['Club tvgo', { v: 1396608, f: '1,396,608' }, { v: 1394510, f: '1,394,510 (99.85%)' }, { v: 26698, f: '26,698' }, { v: 768, f: '768' }],
+			['Sorteos', { v: 37779, f: '37,779' }, { v: 37750, f: '37,750 (99.92%)' }, { v: 2109, f: '2,109' }, { v: 34, f: '34' }],
+			['Champions', { v: 19510, f: '19,510' }, { v: 19501, f: '19,501 (99.95%)' }, { v: 995, f: '995' }, { v: 26, f: '26' }],
+			['Vencimiento', { v: 286, f: '286' }, { v: 285, f: '285 (99.65%)' }, { v: 49, f: '49' }, { v: 5, f: '5' }],
+			['Newsletter', { v: 96, f: '96' }, { v: 91, f: '91 (94.8%)' }, { v: 29, f: '29' }, { v: 2, f: '2' }]
+			]);
+			var table = new google.visualization.Table(document.getElementById('table_div5'));
+			table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
+		}
+
+		google.charts.load('current', { 'packages': ['corechart'] });
+		google.charts.setOnLoadCallback(drawChart1);
+		function drawChart1() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Enviados'],
+			['Club tvgo', 1396608],
+			['Sorteos',     37779],
+			['Champions',   19510],
+			['Vencimiento',   286],
+			['Newsletter',     96]
+			]);
+			var options = {
+			title: 'MAILINGS ENVIADOS POR TIPO CAMPAÑA '
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart5'));
+			chart.draw(data, options);
+		}
+
+		google.charts.load('current', { 'packages': ['bar'] });
+		google.charts.setOnLoadCallback(drawChart2);
+		function drawChart2() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 12.81, 2.66, 6.14],
+			['Sorteos', 	  9.26, 4.37, 0],
+			['Champions',    10.27, 4.23, 0],
+			['Vencimiento',     17.19, 0, 0],
+			['Newsletter',      0, 31.87, 0]
+			]);
+			var options = {
+			title: 'RATIO DE APERTURA POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
+			};
+			var chart = new google.charts.Bar(document.getElementById('columnchart_material15'));
+			chart.draw(data, google.charts.Bar.convertOptions(options));
+		}
+
+		google.charts.load('current', { 'packages': ['bar'] });
+		google.charts.setOnLoadCallback(drawChart3);
+		function drawChart3() {
+			var data = google.visualization.arrayToDataTable([
+			['Campaña', 'Suscriptores', 'No Suscriptores 0', 'No Suscriptores 1'],
+			['Club tvgo', 8.86, 2.68, 2.42],
+			['Sorteos',      1.38, 1.78, 0],
+			['Champions', 		1, 3.41, 0],
+			['Vencimiento',    10.21, 0, 0],
+			['Newsletter',       0, 6.9, 0]
+			]);
+			var options = {
+			title: 'RATIO DE CLICS POR TIPO CAMPAÑA (%)',
+			subtitle:'No Suscriptores 0: Nunca estuvieron suscritos; No Suscriptores 1: Algunas vez estuvieron suscritos pero, actualmente, no lo están.',
+			};
+			var chart = new google.charts.Bar(document.getElementById('columnchart_material9'));
+			chart.draw(data, google.charts.Bar.convertOptions(options));
+		}
+	}
+	/*End Sexto tab*/
 
 });
